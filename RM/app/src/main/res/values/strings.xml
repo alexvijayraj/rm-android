@@ -1,3 +1,4 @@
 <resources>
-    <string name="app_name">RM</string>
+    <string name="app_name">Ridemate</string>
+    <string name="splash_loading">LOADING</string>
 </resources>

@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:id="@+id/splash_bg"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/splash_bg">
+
+    <RelativeLayout
+        android:id="@+id/rlSplashLogo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true">
+
+        <ImageView
+            android:id="@+id/ivSplashLogo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/splash_logo"/>
+
+        <TextView
+            android:id="@+id/tvSplashLogo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/app_name"
+            android:textAllCaps="true"
+            android:textColor="@color/colorOrange"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/ivSplashLogo"
+            android:layout_marginTop="20dp"
+            android:textSize="25sp"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rlSplashLoading"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="30dp">
+
+        <TextView
+            android:id="@+id/tvSplashLoading"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/splash_loading"
+            android:textAllCaps="true"
+            android:textColor="@color/colorOrange"
+            android:layout_centerHorizontal="true"
+            />
+
+        <ImageView
+            android:id="@+id/ivSplashLoading"
+            android:layout_below="@+id/tvSplashLoading"
+            android:layout_marginTop="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/splash_loading_1"/>
+
+    </RelativeLayout>
+
+
+
+
+
+</RelativeLayout>
