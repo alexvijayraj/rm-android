@@ -1,4 +1,4 @@
-package io.neverstoplearning.advancedandroid.di;
+package com.nilasoftwares.rm.di;
 
 import java.lang.annotation.Retention;
 import java.lang.annotation.RetentionPolicy;
