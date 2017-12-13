@@ -27,6 +27,7 @@ ext {
     minSdkVersion = 21
     targetSdkVersion = 26
     supportLibraryVersion = '27.0.2'
+    googlePlayServicesVersion = '11.6.2'
 }
 
 

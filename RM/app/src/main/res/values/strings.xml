@@ -4,4 +4,13 @@
     <string name="login_text">Sign in to access Ridemate</string>
     <string name="login_signin">SIGNING IN</string>
     <string name="login_signout">SIGNING OUT</string>
+    <string name="header">RIDEMATE</string>
+
+    <string name="nav_drawer_row_1">New Ride</string>
+    <string name="nav_drawer_row_2">My Rides</string>
+    <string name="nav_drawer_row_3">My Wallet</string>
+    <string name="nav_drawer_row_4">Settings</string>
+    <string name="nav_drawer_row_5">Invite Friends</string>
+    <string name="nav_drawer_row_6">Help</string>
+    <string name="nav_drawer_row_7">Log Out</string>
 </resources>

@@ -220,8 +220,8 @@ public class LoginActivity extends Activity implements LoginView, View.OnClickLi
      */
     private void openNextActivity(){
 
-        //Intent myIntent = new Intent(SplashActivity.this, LoginActivity.class);
-        //SplashActivity.this.startActivity(myIntent);
+        Intent myIntent = new Intent(LoginActivity.this, HomeActivity.class);
+        LoginActivity.this.startActivity(myIntent);
 
     }
 

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<tabs>
+    <tab
+        id="@+id/tab_rides"
+        icon="@drawable/ic_rides"
+        title="My Rides" />
+    <tab
+        id="@+id/tab_account"
+        icon="@drawable/ic_account"
+        title="My Account" />
+    <tab
+        id="@+id/tab_wallet"
+        icon="@drawable/ic_wallet"
+        title="My Wallet" />
+</tabs>

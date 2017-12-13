@@ -13,6 +13,11 @@ android {
 
     }
     buildTypes {
+        debug{
+            buildConfigField "String", "GOOGLE_MAP_KEY", "\"AIzaSyAp2n7dphGPOKLdOuevVpH6uWWKZzDZ3qw\""
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
         release {
             minifyEnabled false
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
@@ -31,4 +36,8 @@ dependencies {
     testImplementation 'junit:junit:4.12'
     androidTestImplementation 'com.android.support.test:runner:1.0.1'
     androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.1'
+
+    compile 'com.roughike:bottom-bar:2.3.1'
+    compile "com.google.android.gms:play-services-maps:$googlePlayServicesVersion"
+    compile "com.google.android.gms:play-services-places:$googlePlayServicesVersion"
 }

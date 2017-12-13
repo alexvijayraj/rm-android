@@ -15,7 +15,7 @@ public class LoginModel implements LoginPresenter {
     private LoginView loginView;
     private Context context;
 
-    private android.os.Handler mHandler;
+    private Handler mHandler;
     private Runnable mRunnable;
 
     public LoginModel(LoginView loginView, Context context){
