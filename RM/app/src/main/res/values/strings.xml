@@ -1,4 +1,7 @@
 <resources>
     <string name="app_name">Ridemate</string>
     <string name="splash_loading">LOADING</string>
+    <string name="login_text">Sign in to access Ridemate</string>
+    <string name="login_signin">SIGNING IN</string>
+    <string name="login_signout">SIGNING OUT</string>
 </resources>

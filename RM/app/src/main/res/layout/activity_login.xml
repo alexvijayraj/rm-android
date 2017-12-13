@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/splash_bg"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/splash_bg">
+
+    <RelativeLayout
+        android:id="@+id/rlLogin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:paddingBottom="80dp">
+
+        <ImageView
+            android:id="@+id/ivLoginLogo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/login_logo" />
+
+        <TextView
+            android:id="@+id/tvLoginLogo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/ivLoginLogo"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="25dp"
+            android:text="@string/login_text"
+            android:textColor="@color/colorYellow" />
+
+        <ImageButton
+            android:id="@+id/ibLoginFacebook"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_marginTop="75dp"
+            android:layout_below="@+id/tvLoginLogo"
+            android:layout_centerHorizontal="true"
+            android:background="@null"
+            android:src="@drawable/login_facebook" />
+
+        <ImageButton
+            android:id="@+id/ibLoginGoogle"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_marginTop="25dp"
+            android:layout_below="@+id/ibLoginFacebook"
+            android:background="@null"
+            android:src="@drawable/login_google" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rlLoginLoading"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="invisible">
+
+        <RelativeLayout
+            android:id="@+id/rlSplashLogo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true">
+
+            <ImageView
+                android:id="@+id/ivSplashLogo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/splash_logo"/>
+
+            <TextView
+                android:id="@+id/tvSplashLogo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/app_name"
+                android:textAllCaps="true"
+                android:textColor="@color/colorOrange"
+                android:layout_centerHorizontal="true"
+                android:layout_below="@+id/ivSplashLogo"
+                android:layout_marginTop="20dp"
+                android:textSize="25sp"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="30dp"
+            >
+
+            <TextView
+                android:id="@+id/tvLoginLoading"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/login_signin"
+                android:textAllCaps="true"
+                android:textColor="@color/colorOrange"
+                android:layout_centerHorizontal="true"
+                />
+
+            <ImageView
+                android:id="@+id/ivLoginLoading"
+                android:layout_below="@+id/tvLoginLoading"
+                android:layout_marginTop="20dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/splash_loading_1"/>
+
+        </RelativeLayout>
+
+
+
+    </RelativeLayout>
+
+
+</RelativeLayout>
