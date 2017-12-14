@@ -32,6 +32,14 @@ import com.nilasoftwares.rm.view.HomeView;
  * Created by alexvijayrajamalaraj on 12/12/17.
  */
 
+/**
+ * Home Activity that displays Google Maps
+ *
+ *  - The Main Activity of the app
+ *  - Enables users to book or schedule rides
+ *
+ * @author alexvijayrajamalaraj
+ */
 public class HomeActivity extends FragmentActivity implements HomeView, View.OnClickListener, OnMapReadyCallback,
         GoogleMap.OnMyLocationChangeListener{
 
@@ -99,8 +107,18 @@ public class HomeActivity extends FragmentActivity implements HomeView, View.OnC
     @Override
     public void toggleNavDrawer(boolean toggle) {
 
+        if(toggle){
+            mDrawerLayout.openDrawer(Gravity.LEFT);
+        }else{
+            mDrawerLayout.closeDrawer(Gravity.LEFT);
+        }
+
     }
 
+    /**
+     * method to initialize the Left hand navigation drawer
+     *
+     */
     private void initDrawer(){
 
         //Letting the system know that the list objects are of fixed size
@@ -114,6 +132,10 @@ public class HomeActivity extends FragmentActivity implements HomeView, View.OnC
 
     }
 
+    /**
+     * method to initialize Google Maps
+     *
+     */
     private void initMap(){
 
         //The Map fragment is initialized
@@ -240,6 +262,4 @@ public class HomeActivity extends FragmentActivity implements HomeView, View.OnC
             }
         }
     }
-
-
 }

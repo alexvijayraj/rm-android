@@ -10,6 +10,13 @@ import com.nilasoftwares.rm.view.LoginView;
  * Created by alexvijayrajamalaraj on 12/12/17.
  */
 
+/**
+ * Model class of the Login Activity
+ *
+ *  - Logs in user to Facebook/ Google
+ *
+ * @author alexvijayrajamalaraj
+ */
 public class LoginModel implements LoginPresenter {
 
     private LoginView loginView;

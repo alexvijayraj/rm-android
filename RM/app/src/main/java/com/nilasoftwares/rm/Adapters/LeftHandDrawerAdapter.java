@@ -13,6 +13,11 @@ import com.nilasoftwares.rm.R;
  * Created by alexvijayrajamalaraj on 12/12/17.
  */
 
+/**
+ * Adapter to the left hand navigation drawer displayed on the Home screen
+ *
+ * @author alexvijayrajamalaraj
+ */
 public class LeftHandDrawerAdapter extends RecyclerView.Adapter<LeftHandDrawerAdapter.ViewHolder>{
 
     // indicates the header row of the nav drawer
@@ -25,6 +30,10 @@ public class LeftHandDrawerAdapter extends RecyclerView.Adapter<LeftHandDrawerAd
 
     private String mNavTitles[];
 
+    /**
+     * Constructor that takes in context as a parameter
+     *
+     */
     public LeftHandDrawerAdapter(Context context) {
         this.context = context;
 
@@ -33,6 +42,10 @@ public class LeftHandDrawerAdapter extends RecyclerView.Adapter<LeftHandDrawerAd
 
     }
 
+    /**
+     * View holder that represents each row of the drawer
+     *
+     */
     @Override
     public LeftHandDrawerAdapter.ViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
 
@@ -58,6 +71,10 @@ public class LeftHandDrawerAdapter extends RecyclerView.Adapter<LeftHandDrawerAd
 
     }
 
+    /**
+     * method gets called when view is setup. TextViews are set with corresponding texts
+     *
+     */
     @Override
     public void onBindViewHolder(LeftHandDrawerAdapter.ViewHolder holder, int position) {
 
@@ -69,6 +86,10 @@ public class LeftHandDrawerAdapter extends RecyclerView.Adapter<LeftHandDrawerAd
 
     }
 
+    /**
+     * method to return total number of rows of the drawer
+     *
+     */
     @Override
     public int getItemCount() {
 
@@ -76,6 +97,10 @@ public class LeftHandDrawerAdapter extends RecyclerView.Adapter<LeftHandDrawerAd
         return mNavTitles.length + 1;
     }
 
+    /**
+     * method to differentiate between header and item row depending on position
+     *
+     */
     @Override
     public int getItemViewType(int position) {
         if (isPositionHeader(position))
@@ -84,10 +109,18 @@ public class LeftHandDrawerAdapter extends RecyclerView.Adapter<LeftHandDrawerAd
         return TYPE_ITEM;
     }
 
+    /**
+     * method to return the position of the header
+     *
+     */
     private boolean isPositionHeader(int position) {
         return position == 0;
     }
 
+    /**
+     * method to initialize the row elements except header of the drawer
+     *
+     */
     private void initRowElements(){
 
         mNavTitles = new String[]{getRowElement(1),getRowElement(2), getRowElement(3),
@@ -96,6 +129,10 @@ public class LeftHandDrawerAdapter extends RecyclerView.Adapter<LeftHandDrawerAd
 
     }
 
+    /**
+     * method to get the text to display on each row based on index
+     *
+     */
     private String getRowElement(int index){
         String retString = "";
 
@@ -126,6 +163,10 @@ public class LeftHandDrawerAdapter extends RecyclerView.Adapter<LeftHandDrawerAd
         return retString;
     }
 
+    /**
+     * class to setup the ViewHolder
+     *
+     */
     public static class ViewHolder extends RecyclerView.ViewHolder {
 
         int Holderid;

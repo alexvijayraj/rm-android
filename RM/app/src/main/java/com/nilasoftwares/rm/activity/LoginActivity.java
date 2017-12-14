@@ -20,6 +20,11 @@ import com.nilasoftwares.rm.view.LoginView;
  * Created by alexvijayrajamalaraj on 12/12/17.
  */
 
+/**
+ * Login Activity to enable user to login through Facebook or Google
+ *
+ * @author alexvijayrajamalaraj
+ */
 public class LoginActivity extends Activity implements LoginView, View.OnClickListener{
 
     private LoginPresenter loginPresenter;

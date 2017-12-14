@@ -17,7 +17,6 @@ import com.nilasoftwares.rm.view.SplashView;
  *
  * @author alexvijayrajamalaraj
  */
-
 public class SplashActivity extends Activity implements SplashView {
 
     private SplashPresenter splashPresenter;

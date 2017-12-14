@@ -12,6 +12,13 @@ import android.support.v7.widget.RecyclerView;
  * Created by alexvijayrajamalaraj on 12/12/17.
  */
 
+/**
+ * Model class of the Home activity
+ *
+ *  - sets up Left Hand Navigation drawer
+ *
+ * @author alexvijayrajamalaraj
+ */
 public class HomeModel implements HomePresenter {
 
     private HomeView homeView;

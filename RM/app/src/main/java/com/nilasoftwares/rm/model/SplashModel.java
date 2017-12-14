@@ -10,6 +10,13 @@ import android.os.Handler;
  * Created by alexvijayrajamalaraj on 12/12/17.
  */
 
+/**
+ * Model class of the Splash Activity
+ *
+ *  - Dismisses activity after timeout
+ *
+ * @author alexvijayrajamalaraj
+ */
 public class SplashModel implements SplashPresenter {
 
     private SplashView splashView;
