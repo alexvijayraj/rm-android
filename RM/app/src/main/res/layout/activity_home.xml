@@ -56,6 +56,29 @@
 
         </RelativeLayout>
 
+        <ImageButton
+            android:id="@+id/ibFindMate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/rlHeader"
+            android:layout_marginTop="75dp"
+            android:elevation="10dp"
+            android:background="@null"
+            android:src="@drawable/find_a_mate"
+            />
+
+        <ImageButton
+            android:id="@+id/ibGps"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="5dp"
+            android:layout_above="@+id/bottomBar"
+            android:background="@null"
+            android:src="@drawable/ic_gps_active"
+            />
+
         <com.roughike.bottombar.BottomBar
             android:id="@+id/bottomBar"
             android:layout_width="match_parent"
