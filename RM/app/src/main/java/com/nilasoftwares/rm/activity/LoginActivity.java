@@ -227,6 +227,8 @@ public class LoginActivity extends Activity implements LoginView, View.OnClickLi
 
         Intent myIntent = new Intent(LoginActivity.this, HomeActivity.class);
         LoginActivity.this.startActivity(myIntent);
+        LoginActivity.this.overridePendingTransition(R.anim.fade_in_0, R.anim.fade_out_0);
+        LoginActivity.this.finish();
 
     }
 

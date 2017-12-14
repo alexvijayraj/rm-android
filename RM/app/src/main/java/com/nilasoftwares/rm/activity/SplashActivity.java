@@ -141,6 +141,8 @@ public class SplashActivity extends Activity implements SplashView {
 
         Intent myIntent = new Intent(SplashActivity.this, LoginActivity.class);
         SplashActivity.this.startActivity(myIntent);
+        SplashActivity.this.overridePendingTransition(R.anim.fade_in_0, R.anim.fade_out_0);
+        SplashActivity.this.finish();
 
     }
 
